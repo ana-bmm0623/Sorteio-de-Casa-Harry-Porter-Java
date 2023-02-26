@@ -1,0 +1,23 @@
+package sorteio.harrypotter;
+
+import sorteio.harrypotter.Sorteio;
+import  java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		
+		String nome;
+		Sorteio sorteio = new Sorteio();
+
+		System.out.println("Sorteio da Casa de Harry Porter" );
+		
+		System.out.println("Ola, bruxo/a! " + "Digite seu nome: " );
+		nome = leitor.next();
+
+		System.out.println("Voce, " + nome + " e da casa " + sorteio.sortearCasa() + "! Parabens");
+		leitor.close();
+	}
+
+}
