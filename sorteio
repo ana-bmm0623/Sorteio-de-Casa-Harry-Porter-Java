@@ -1,0 +1,19 @@
+package sorteio.harrypotter;
+
+import java.util.Random;
+
+public class Sorteio {
+	String vetor[] = new String[4];
+	
+	public Sorteio(){
+	vetor[0] = "Grifinoria";
+	vetor[1] = "Sonserina";
+	vetor[2] = "Corvinal";
+	vetor[3] = "Lufa-lufa";
+	}
+	
+	public String sortearCasa() {
+	int sorte = new Random().nextInt(vetor.length);
+	return vetor[sorte];
+}
+}
